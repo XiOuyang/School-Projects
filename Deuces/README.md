@@ -1,17 +1,35 @@
-This program implements the game, 'Mastermind'.
+The end goal of this program will be to implement the card game 'Deuces'
 
-Rules: The player is presented with a 4 digit random number greater than 999
-		but less than 10000.
-       The player has to guess the correct 4 digit number.
-	   She gets 10 chances. 
-			If she enters an invalid character, the number is revealed. 
-			If she enters the correct number, it is revealed and she wins.
-			If she enters the wrong number 10 times, she loses and # is revealed.
-			If she enters correct digits of number but in wrong order, a 'close' 
-			counter is displayed, telling her how many digits were correct but in 
-			the wrong order.
-			If she enters some correct digits in the right place but other digits 
-			were off, a 'correct' counter is displayed, telling her how many digits
-			were correct and in the right place.
-			
-			![alt tag](http://imgur.com/4UUQVzf.jpg)
+#Rules:
+-Each player is dealt 13 playing cards from a standard 52 card deck
+-Objective: To empty your hand before your opponent
+-Turn based game. Player with the lowest card plays first, and other players
+must beat the card played by the previous player. If they cannot, that player
+goes again, This process continues until all but 1 player empties out their 
+hand.
+-Lowest to highest: 3 to A, and 2 is the highest
+-suits: spades, clovers, diamonds, hearts
+-Can play out cards in pairs, triples, or straights.
+Straights must be at least 3 consecutive cards such as:
+
+3 4 5
+
+#Bombs
+-Kinds of Bombs:
+	3 consecutive card pairs or more
+	4 of a kind
+-Only combo that will beat a 2, besides a 2 of higher suit
+-Higher bombs will beat other bombs. Example:
+
+33 44 55 < 44 55 66
+
+#Instant Win Conditions
+-All 4 2s in hand
+-3 to A ('Dragon')
+-All pairs
+
+So far the program generates a 52 card deck, sorts the cards in order, prints 
+both unsorted and sorted version, and prints out a player's starting hand.
+More to come!
+
+![Picture](http://i.imgur.com/yc1JkPu.jpg)

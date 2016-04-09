@@ -14,3 +14,4 @@ Rules: The player is presented with a 4 digit random number greater than 999
 			were off, a 'correct' counter is displayed, telling her how many digits
 			were correct and in the right place.
 			
+			![Picture](http://i.imgur.com/4UUQVzf.jpg)
